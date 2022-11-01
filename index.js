@@ -15,7 +15,7 @@ app.use(bodyParser.raw());
 // create application/json parser
 var jsonParser = bodyParser.json();
 
-const port = 3002;
+const port = process.env.PORT || 8080;
 
 // let data = `import Home from "./Home";
 // `;
